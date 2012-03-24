@@ -1,0 +1,709 @@
+<html lang="en" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths dj_webkit dj_chrome dj_contentbox" style="height: 100%; width: 100%"><!--<![endif]--><head><style type="text/css"></style>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="monteslu">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- CSS : implied media="all" -->
+  <link rel="stylesheet" href="/css/style.css?v=3">
+
+  <!-- Uncomment if you are specifically targeting less enabled mobile browsers
+  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
+ 
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="/js/libs/modernizr-1.6.min.js"></script>
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6/dojo/dojo.xd.js" djconfig="parseOnLoad: true, baseUrl: '/js/', modulePaths:{azp:'azp'}, gfxRenderer:'canvas,svg,vml,silverlight',defaultDuration:1"></script>
+
+<style type="text/css">
+        @import "claro.css";
+        @import "http://ajax.googleapis.com/ajax/libs/dojo/1.6/dojox/widget/ColorPicker/ColorPicker.css";  
+                   
+</style>
+<script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/_Widget.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/_Templated.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/Button.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/Textarea.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/SimpleTextarea.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/Tooltip.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/ValidationTextBox.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/Dialog.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/layout/BorderContainer.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/layout/ContentPane.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/gfx.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/fx.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/gfx/move.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/NodeList-fx.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/widget/ColorPicker.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/DropDownButton.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/TooltipDialog.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/RadioButton.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/Select.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/Form.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/Slider.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/_WidgetBase.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/_base.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/string.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/parser.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/cache.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/_FormWidget.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/_Container.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/_HasDropDown.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/TextBox.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/nls/validate.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/dnd/move.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/dnd/TimedMoveable.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/window.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/_CssStateMixin.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/_FormMixin.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/_DialogMixin.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/DialogUnderlay.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/nls/common.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/layout/_LayoutWidget.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/cookie.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/layout/_ContentPaneResizeMixin.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/html.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/nls/loading.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/gfx/canvas.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/fx/Toggler.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/gfx/Mover.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/gfx/Moveable.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/widget/nls/ColorPicker.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/cldr/nls/en/number.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/color.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/CheckBox.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/_FormSelectWidget.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/Menu.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/HorizontalSlider.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/VerticalSlider.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/HorizontalRule.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/VerticalRule.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/HorizontalRuleLabels.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/VerticalRuleLabels.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/_base/manager.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/Stateful.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/_base/focus.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/_base/place.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/_base/popup.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/_base/scroll.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/_base/sniff.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/_base/typematic.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/_base/wai.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/_base/window.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/date/stamp.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/dnd/Mover.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/dnd/Moveable.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/_Contained.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/regexp.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/gfx/shape.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/gfx/path.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/gfx/arc.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/gfx/decompose.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/color/_base.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/form/ToggleButton.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/data/util/sorter.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/_KeyNavContainer.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/MenuItem.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/PopupMenuItem.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/CheckedMenuItem.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dijit/MenuSeparator.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/number.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/AdapterRegistry.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/uacss.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/dnd/common.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/dnd/autoscroll.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/colors.xd.js"></script><style>#wcs-iframe { display: none; }</style></head>
+<style type="text/css">
+	#whiteboardContainer{
+		border:none !important;
+	}
+	#whiteboardOverlayContainer{
+		background: -o-linear-gradient(top,white,#F4F4F4);
+		background: -webkit-gradient(linear,left top,left bottom,from(white),to(#F4F4F4));
+		background: -moz-linear-gradient(top,white,#F4F4F4);
+		background: -o-linear-gradient(top,white,#F4F4F4);
+		border: 1px solid #BBBBBB !important;
+		margin:5px 10px 10px 10px;
+		margin-bottom: 9px !important;
+		vertical-align: top;
+		width:700px !important;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		-moz-box-shadow: 0 0 4px #999999;
+		-webkit-box-shadow: 0 0 4px #999999;
+		box-shadow: 0 0 4px #999999;
+		}
+	}
+	#lineSwatch{
+		width:20px;
+		display:inline-block !important;
+	}
+</style>
+<body class="claro" style="height: 100%; width: 100%">
+
+  <div id="container">
+    <header>
+		
+
+    </header>
+    
+    <div id="main">
+
+
+
+
+<script src="/_ah/channel/jsapi"></script>
+<script>
+dojo.require('azp.BBCodeEditor');
+
+
+var chatMessageList = [];
+var geomMessageList = [];
+var messageList = [];
+var messageMax = 200;
+var wbId = 'agdhenBkZW1vchILEgpXaGl0ZUJvYXJkGNrAUAw';
+var token = '';
+var userName = '';
+var lastMessage = '';
+var userList = [];
+var messageListObj = null;
+
+ messageListObj = {"messages":[]};
+ if(messageListObj.messages && (messageListObj.messages.length > 0)){
+	 messageList = messageListObj.messages;
+ }
+
+//dojo.require('azp.Whiteboard');
+
+var error = '';
+</script>
+<script src="/js/azp/Whiteboard.js"></script>
+
+<!--<script src="/js/azp/BBCodeEditor.js"></script>-->
+
+<style>
+#header{
+	font-size: 3em;
+	text-align: center;
+
+}
+
+#setUserDiv{
+	text-align: center;
+}
+
+._webstore_badge {
+  width: 128px;
+  height: 190px;
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  margin: 0 50px 0 50px;
+  padding: 5px;
+  box-shadow: #000 0 0 5px;
+  background-color: #eae88c;
+  border: solid 1px #c9c778;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: inline;
+  font-family: Arial;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+</style>
+
+
+<div id="setUserDiv" style="padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; display: none; ">
+	<div id="header"><h1>Collaborative Whiteboard</h1></div>
+	
+	<br>
+	Choose any user name (no spaces or punctuation):<div class="dijit dijitReset dijitInlineTable dijitLeft dijitTextBox dijitValidationTextBox dijitTextBoxDisabled dijitValidationTextBoxDisabled dijitDisabled" id="widget_userNameText" role="presentation" widgetid="userNameText"><div class="dijitReset dijitValidationContainer"><input class="dijitReset dijitInputField dijitValidationIcon dijitValidationInner" value="Χ " type="text" tabindex="-1" readonly="readonly" role="presentation"></div><div class="dijitReset dijitInputField dijitInputContainer"><input class="dijitReset dijitInputInner" dojoattachpoint="textbox,focusNode" autocomplete="off" type="text" id="userNameText" tabindex="-1" value="" aria-invalid="false" disabled="" aria-disabled="true"></div></div> <span class="dijit dijitReset dijitInline dijitButton dijitButtonDisabled dijitDisabled" widgetid="userNameBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="userNameBtn_label" style="-webkit-user-select: none; " id="userNameBtn" tabindex="-1" aria-disabled="true"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="userNameBtn_label" dojoattachpoint="containerNode">Start Drawing!</span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode" disabled=""></span><br>
+	
+	<span id="subitUserNameMessage">connecting to channel...</span>
+	<br><br>
+<!--	<script src="/js/badge.js"></script>-->
+
+</div>
+
+
+
+
+
+
+
+
+<div id="applicationArea" style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; " dojotype="dijit.layout.BorderContainer" livesplitters="true" class="dijitBorderContainer dijitContainer dijitLayoutContainer" widgetid="applicationArea">
+	<div region="leading" style="width: 40em; left: 5px; top: 5px; position: absolute; height: 426px; " dojotype="dijit.layout.ContentPane" splitter="true" class="dijitContentPane dijitContentPaneSingleChild dijitBorderContainer-child dijitBorderContainer-dijitContentPane dijitBorderContainerPane dijitAlignLeft" title="" role="group" id="dijit_layout_ContentPane_0" widgetid="dijit_layout_ContentPane_0">
+		<div id="chatArea" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; width: 520px; height: 426px; " dojotype="dijit.layout.BorderContainer" livesplitters="true" class="dijitBorderContainer dijitContainer dijitLayoutContainer" widgetid="chatArea">
+			
+			<div id="output" style="overflow-x: auto; overflow-y: auto; position: absolute; left: 5px; top: 5px; width: 492px; height: 265px; " region="center" dojotype="dijit.layout.ContentPane" splitter="true" class="dijitContentPane dijitBorderContainer-child dijitBorderContainer-dijitContentPane dijitBorderContainerPane dijitAlignCenter" title="" role="group" widgetid="output">
+			</div>
+			<div style="left: 5px; position: absolute; width: 492px; top: 293px; " region="bottom" dojotype="dijit.layout.ContentPane" splitters="true" class="dijitContentPane dijitBorderContainer-child dijitBorderContainer-dijitContentPane dijitBorderContainerPane dijitAlignBottom" title="" role="group" id="dijit_layout_ContentPane_1" widgetid="dijit_layout_ContentPane_1">
+				<table border="0" cellspacing="5"><tbody><tr><td>
+				<div id="chatText" widgetid="chatText"><span><span class="dijit dijitReset dijitInline dijitButton" widgetid="bBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="bBtn_label" title="" style="-webkit-user-select: none; " id="bBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon dijitEditorIcon dijitEditorIconBold" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText dijitDisplayNone" id="bBtn_label" dojoattachpoint="containerNode"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span><span dojotype="dijit.Tooltip" connectid="bBtn" class="dijitTooltipData" id="dijit_Tooltip_1" widgetid="dijit_Tooltip_1"><b>Bold</b></span><span class="dijit dijitReset dijitInline dijitButton" widgetid="iBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="iBtn_label" title="" style="-webkit-user-select: none; " id="iBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon dijitEditorIcon dijitEditorIconItalic" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText dijitDisplayNone" id="iBtn_label" dojoattachpoint="containerNode"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span><span dojotype="dijit.Tooltip" connectid="iBtn" class="dijitTooltipData" id="dijit_Tooltip_2" widgetid="dijit_Tooltip_2"><i>Italic</i></span><span class="dijit dijitReset dijitInline dijitButton" widgetid="uBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="uBtn_label" title="" style="-webkit-user-select: none; " id="uBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon dijitEditorIcon dijitEditorIconUnderline" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText dijitDisplayNone" id="uBtn_label" dojoattachpoint="containerNode"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span><span dojotype="dijit.Tooltip" connectid="uBtn" class="dijitTooltipData" id="dijit_Tooltip_3" widgetid="dijit_Tooltip_3"><u>Underline</u></span><span class="dijit dijitReset dijitInline dijitButton" widgetid="sBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="sBtn_label" title="" style="-webkit-user-select: none; " id="sBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon dijitEditorIcon dijitEditorIconStrikethrough" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText dijitDisplayNone" id="sBtn_label" dojoattachpoint="containerNode"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span><span dojotype="dijit.Tooltip" connectid="sBtn" class="dijitTooltipData" id="dijit_Tooltip_4" widgetid="dijit_Tooltip_4"><s>Strikethrough</s></span><span class="dijit dijitReset dijitInline dijitButton" widgetid="supBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="supBtn_label" title="" style="-webkit-user-select: none; " id="supBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon dijitEditorIcon dijitEditorIconSuperscript" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText dijitDisplayNone" id="supBtn_label" dojoattachpoint="containerNode"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span><span dojotype="dijit.Tooltip" connectid="supBtn" class="dijitTooltipData" id="dijit_Tooltip_5" widgetid="dijit_Tooltip_5">Super<sup>script</sup></span><span class="dijit dijitReset dijitInline dijitButton" widgetid="subBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="subBtn_label" title="" style="-webkit-user-select: none; " id="subBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon dijitEditorIcon dijitEditorIconSubscript" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText dijitDisplayNone" id="subBtn_label" dojoattachpoint="containerNode"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span><span dojotype="dijit.Tooltip" connectid="subBtn" class="dijitTooltipData" id="dijit_Tooltip_6" widgetid="dijit_Tooltip_6">Sub<sub>script</sub></span><span class="dijit dijitReset dijitInline dijitButton" widgetid="quoteBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="quoteBtn_label" title="" style="-webkit-user-select: none; " id="quoteBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon dijitEditorIcon dijitEditorIconSelectAll" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText dijitDisplayNone" id="quoteBtn_label" dojoattachpoint="containerNode"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span><span dojotype="dijit.Tooltip" connectid="quoteBtn" class="dijitTooltipData" id="dijit_Tooltip_7" widgetid="dijit_Tooltip_7">Quote</span></span><br><textarea dojoattachpoint="focusNode,containerNode,textbox" autocomplete="off" class="dijitTextBox dijitTextArea" rows="3" cols="40" id="dijit_form_SimpleTextarea_0" tabindex="0" style="" widgetid="dijit_form_SimpleTextarea_0" value=""></textarea></div> <span class="dijit dijitReset dijitInline dijitButton" widgetid="chatBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="chatBtn_label" style="-webkit-user-select: none; " id="chatBtn" tabindex="0" aria-disabled="false"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="chatBtn_label" dojoattachpoint="containerNode">Say</span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span><span id="chatWaitMessage"></span>
+				
+				</td>
+				<td>
+				Users:<br>
+				<div style="width: 10em; overflow: auto;border: 1px solid #888888;" id="userListDiv"><span id="userListItememre" style="background-color: #FFFFFF;">emre</span><br></div>
+				</td>				
+				</tr></tbody></table>
+			</div><div class="dijitGutter dijitGutterH dijitAlignBottom" role="presentation" id="dijit_layout_ContentPane_1_splitter" widgetid="dijit_layout_ContentPane_1_splitter" style="left: 5px; position: absolute; width: 510px; top: 288px; "></div>
+		</div>
+	</div><div class="dijitSplitter dijitSplitterV dijitAlignLeft" dojoattachevent="onkeypress:_onKeyPress,onmousedown:_startDrag,onmouseenter:_onMouse,onmouseleave:_onMouse" tabindex="0" role="separator" id="dijit_layout_ContentPane_0_splitter" widgetid="dijit_layout_ContentPane_0_splitter" style="left: 543px; top: 5px; position: absolute; height: 444px; "><div class="dijitSplitterThumb"></div></div>
+
+<div region="center" dojotype="dijit.layout.ContentPane" splitter="true" class="dijitContentPane dijitBorderContainer-child dijitBorderContainer-dijitContentPane dijitBorderContainerPane dijitAlignCenter" title="" role="group" id="dijit_layout_ContentPane_2" widgetid="dijit_layout_ContentPane_2" style="position: absolute; left: 548px; top: 5px; width: 854px; height: 426px; ">
+	draw: 
+	
+	<div>
+	<div id="whiteboardContainer" style="border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-color: blue; border-right-color: blue; border-bottom-color: blue; border-left-color: blue; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; background-color: white; width: 600px; height: 450px; "><canvas width="600" height="450"></canvas></div>
+	<div id="whiteboardOverlayContainer" style="border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-color: black; border-right-color: black; border-bottom-color: black; border-left-color: black; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; width: 600px; height: 450px; position: absolute; z-index: 1; top: 24px; left: 8px; "><canvas width="600" height="450"></canvas></div>
+	</div>
+			<form dojoattachpoint="containerNode" dojoattachevent="onreset:_onReset,onsubmit:_onSubmit" id="toolForm" widgetid="toolForm">
+
+		   <span class="dijit dijitReset dijitInline dijitButton dijitButtonFocused dijitFocused selected" widgetid="penToolBtn" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: black; border-right-color: black; border-bottom-color: black; border-left-color: black; border: none;"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="penToolBtn_label" style="-webkit-user-select: none; " id="penToolBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="penToolBtn_label" dojoattachpoint="containerNode"><img border="0" src="/images/pencil.png"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>
+		   <div dojotype="dijit.Tooltip" connectid="penToolBtn" position="above" showdelay="0" class="dijitTooltipData" id="dijit_Tooltip_8" widgetid="dijit_Tooltip_8">Pencil<br>(freehand drawing)</div>
+		   
+		   <span class="dijit dijitReset dijitInline dijitButton" widgetid="lineToolBtn" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; "><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="lineToolBtn_label" style="-webkit-user-select: none; " id="lineToolBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="lineToolBtn_label" dojoattachpoint="containerNode"><img border="0" src="/images/line.png"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>
+		   <div dojotype="dijit.Tooltip" connectid="lineToolBtn" position="above" showdelay="0" class="dijitTooltipData" id="dijit_Tooltip_9" widgetid="dijit_Tooltip_9">Straight Line</div>
+		   
+		   <span class="dijit dijitReset dijitInline dijitButton" widgetid="rectToolBtn" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; "><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="rectToolBtn_label" style="-webkit-user-select: none; " id="rectToolBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="rectToolBtn_label" dojoattachpoint="containerNode"><img border="0" src="/images/rect.png"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>
+		   <div dojotype="dijit.Tooltip" connectid="rectToolBtn" position="above" showdelay="0" class="dijitTooltipData" id="dijit_Tooltip_10" widgetid="dijit_Tooltip_10">Rectangle</div>
+		   
+		   <span class="dijit dijitReset dijitInline dijitButton" widgetid="filledRectToolBtn" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; "><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="filledRectToolBtn_label" style="-webkit-user-select: none; " id="filledRectToolBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="filledRectToolBtn_label" dojoattachpoint="containerNode"><img border="0" src="/images/filledRect.png"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>
+		   <div dojotype="dijit.Tooltip" connectid="filledRectToolBtn" position="above" showdelay="0" class="dijitTooltipData" id="dijit_Tooltip_11" widgetid="dijit_Tooltip_11">Filled Rectangle</div>
+		   
+		   <span class="dijit dijitReset dijitInline dijitButton" widgetid="ellipseToolBtn" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; "><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="ellipseToolBtn_label" style="-webkit-user-select: none; " id="ellipseToolBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="ellipseToolBtn_label" dojoattachpoint="containerNode"><img border="0" src="/images/ellipse.png"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>
+		   <div dojotype="dijit.Tooltip" connectid="ellipseToolBtn" position="above" showdelay="0" class="dijitTooltipData" id="dijit_Tooltip_12" widgetid="dijit_Tooltip_12">Ellipse</div>
+		   
+		   <span class="dijit dijitReset dijitInline dijitButton" widgetid="filledEllipseToolBtn" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; "><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="filledEllipseToolBtn_label" style="-webkit-user-select: none; " id="filledEllipseToolBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="filledEllipseToolBtn_label" dojoattachpoint="containerNode"><img border="0" src="/images/filledEllipse.png"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>
+		   <div dojotype="dijit.Tooltip" connectid="filledEllipseToolBtn" position="above" showdelay="0" class="dijitTooltipData" id="dijit_Tooltip_13" widgetid="dijit_Tooltip_13">Filled Ellipse</div>
+		   
+		   
+		   <span class="dijit dijitReset dijitInline dijitButton" widgetid="textToolBtn" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; "><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="textToolBtn_label" style="-webkit-user-select: none; " id="textToolBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="textToolBtn_label" dojoattachpoint="containerNode"><img border="0" src="/images/text.png"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>
+		   <div dojotype="dijit.Tooltip" connectid="textToolBtn" position="above" showdelay="0" class="dijitTooltipData" id="dijit_Tooltip_14" widgetid="dijit_Tooltip_14">Draw Text</div>
+
+		   <span class="dijit dijitReset dijitInline dijitButton" widgetid="moveToolBtn" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; "><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="moveToolBtn_label" style="-webkit-user-select: none; " id="moveToolBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="moveToolBtn_label" dojoattachpoint="containerNode"><img border="0" src="/images/move.png"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>
+		   <div dojotype="dijit.Tooltip" connectid="moveToolBtn" position="above" showdelay="0" class="dijitTooltipData" id="dijit_Tooltip_15" widgetid="dijit_Tooltip_15">Move a shape</div>
+		   
+		   <span class="dijit dijitReset dijitInline dijitButton" widgetid="moveUpToolBtn" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; "><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="moveUpToolBtn_label" style="-webkit-user-select: none; " id="moveUpToolBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="moveUpToolBtn_label" dojoattachpoint="containerNode"><img border="0" src="/images/moveUp.png"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>
+		   <div dojotype="dijit.Tooltip" connectid="moveUpToolBtn" position="above" showdelay="0" class="dijitTooltipData" id="dijit_Tooltip_16" widgetid="dijit_Tooltip_16">Pull a shape forward</div>
+		   
+		   <span class="dijit dijitReset dijitInline dijitButton" widgetid="moveDownToolBtn" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; "><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="moveDownToolBtn_label" style="-webkit-user-select: none; " id="moveDownToolBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="moveDownToolBtn_label" dojoattachpoint="containerNode"><img border="0" src="/images/moveDown.png"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>
+		   <div dojotype="dijit.Tooltip" connectid="moveDownToolBtn" position="above" showdelay="0" class="dijitTooltipData" id="dijit_Tooltip_17" widgetid="dijit_Tooltip_17">Push a shape back</div>
+		   
+		   <span class="dijit dijitReset dijitInline dijitButton" widgetid="deleteToolBtn" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; "><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="deleteToolBtn_label" style="-webkit-user-select: none; " id="deleteToolBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="deleteToolBtn_label" dojoattachpoint="containerNode"><img border="0" src="/images/delete.png"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>
+		   <div dojotype="dijit.Tooltip" connectid="deleteToolBtn" position="above" showdelay="0" class="dijitTooltipData" id="dijit_Tooltip_18" widgetid="dijit_Tooltip_18">Delete a shape</div>
+		   		   
+		   <span class="dijit dijitReset dijitInline dijitDropDownButton" style="border-top-color: black; border-right-color: black; border-bottom-color: black; border-left-color: black; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; " widgetid="lineColorDisplay"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick" dojoattachpoint="_buttonNode"><span class="dijitReset dijitStretch dijitButtonContents dijitDownArrowButton" dojoattachpoint="focusNode,titleNode,_arrowWrapperNode" role="button" aria-haspopup="true" aria-labelledby="lineColorDisplay_label" style="-webkit-user-select: none; " id="lineColorDisplay" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitInline dijitButtonText" dojoattachpoint="containerNode,_popupStateNode" id="lineColorDisplay_label"> <span id="lineSwatch" style="height: 10px; width: 20px; border: 1px solid black; background-color: black;">&nbsp;&nbsp;</span></span><span class="dijitReset dijitInline dijitArrowButtonInner"></span><span class="dijitReset dijitInline dijitArrowButtonChar">▼</span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>
+		   <span class="dijit dijitReset dijitInline dijitDropDownButton" style="border-top-color: black; border-right-color: black; border-bottom-color: black; border-left-color: black; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; display: none; " widgetid="fillColorDisplay"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick" dojoattachpoint="_buttonNode"><span class="dijitReset dijitStretch dijitButtonContents dijitDownArrowButton" dojoattachpoint="focusNode,titleNode,_arrowWrapperNode" role="button" aria-haspopup="true" aria-labelledby="fillColorDisplay_label" style="-webkit-user-select: none; " id="fillColorDisplay" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitInline dijitButtonText" dojoattachpoint="containerNode,_popupStateNode" id="fillColorDisplay_label">fill <span id="fillSwatch" style="height: 10px; width: 10px; border: 1px solid black; background-color: white;">&nbsp;&nbsp;</span></span><span class="dijitReset dijitInline dijitArrowButtonInner"></span><span class="dijitReset dijitInline dijitArrowButtonChar">▼</span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>
+		   <table class="dijit dijitReset dijitInline dijitLeft dijitDownArrowButton dijitSelect" dojoattachpoint="_buttonNode,tableNode,focusNode" cellspacing="0" cellpadding="0" role="combobox" aria-haspopup="true" style="-webkit-user-select: none; " aria-valuetext="
+    	    	Line Thicknes:  3
+	    		" id="lineStrokeSelect" tabindex="0" widgetid="lineStrokeSelect"><tbody role="presentation"><tr role="presentation"><td class="dijitReset dijitStretch dijitButtonContents dijitButtonNode" role="presentation"><span class="dijitReset dijitInline dijitButtonText" dojoattachpoint="containerNode,_popupStateNode" popupactive="true"><span class="dijitReset dijitInline dijitSelectLabel">
+    	    	Line Thicknes:  3
+	    		</span></span><input type="hidden" name="select" dojoattachpoint="valueNode" value="3" aria-hidden="true"></td><td class="dijitReset dijitRight dijitButtonNode dijitArrowButton dijitDownArrowButton" dojoattachpoint="titleNode" role="presentation"><div class="dijitReset dijitArrowButtonInner" role="presentation"></div><div class="dijitReset dijitArrowButtonChar" role="presentation">▼</div></td></tr></tbody></table>
+	    	
+	    	
+	    	<table class="dijit dijitReset dijitInline dijitLeft dijitSelect dijitDownArrowButton" dojoattachpoint="_buttonNode,tableNode,focusNode" cellspacing="0" cellpadding="0" role="combobox" aria-haspopup="true" style="-webkit-user-select: none; display: none; " aria-valuetext="
+    	    	Font: 12pt
+	    		" id="fontSizeSelect" tabindex="0" widgetid="fontSizeSelect"><tbody role="presentation"><tr role="presentation"><td class="dijitReset dijitStretch dijitButtonContents dijitButtonNode" role="presentation"><span class="dijitReset dijitInline dijitButtonText" dojoattachpoint="containerNode,_popupStateNode"><span class="dijitReset dijitInline dijitSelectLabel">
+    	    	Font: 12pt
+	    		</span></span><input type="hidden" name="select" dojoattachpoint="valueNode" value="12" aria-hidden="true"></td><td class="dijitReset dijitRight dijitButtonNode dijitArrowButton dijitDownArrowButton" dojoattachpoint="titleNode" role="presentation"><div class="dijitReset dijitArrowButtonInner" role="presentation"></div><div class="dijitReset dijitArrowButtonChar" role="presentation">▼</div></td></tr></tbody></table>
+	    	
+	    	<span class="dijit dijitReset dijitInline dijitButton" widgetid="exportImgBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="exportImgBtn_label" style="-webkit-user-select: none; " id="exportImgBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="exportImgBtn_label" dojoattachpoint="containerNode"><img src="/images/export-icon.png"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>
+	    	<div dojotype="dijit.Tooltip" connectid="exportImgBtn" position="below" showdelay="0" class="dijitTooltipData" id="dijit_Tooltip_19" widgetid="dijit_Tooltip_19">Export the drawing surface.</div>
+	    	
+	    	<span class="dijit dijitReset dijitInline dijitButton" widgetid="showMovieBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="showMovieBtn_label" style="-webkit-user-select: none; " id="showMovieBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="showMovieBtn_label" dojoattachpoint="containerNode"><img src="/images/movie-icon.png"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>
+	    	<div dojotype="dijit.Tooltip" connectid="showMovieBtn" position="below" showdelay="0" class="dijitTooltipData" id="dijit_Tooltip_20" widgetid="dijit_Tooltip_20">View all steps that made this drawing.</div>
+	    	
+	    	
+	    	<span class="dijit dijitReset dijitInline dijitDropDownButton" widgetid="clearDrawingDisplay"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick" dojoattachpoint="_buttonNode"><span class="dijitReset dijitStretch dijitButtonContents dijitDownArrowButton" dojoattachpoint="focusNode,titleNode,_arrowWrapperNode" role="button" aria-haspopup="true" aria-labelledby="clearDrawingDisplay_label" style="-webkit-user-select: none; " id="clearDrawingDisplay" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitInline dijitButtonText" dojoattachpoint="containerNode,_popupStateNode" id="clearDrawingDisplay_label" popupactive="true">clear</span><span class="dijitReset dijitInline dijitArrowButtonInner"></span><span class="dijitReset dijitInline dijitArrowButtonChar">▼</span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>
+		</form>
+	<br><br>
+	Share this link with your friends to have them join:<br>
+<a href="http://demo.drawitlive.com/whiteboard/agdhenBkZW1vchILEgpXaGl0ZUJvYXJkGNrAUAw">http://demo.drawitlive.com/whiteboard/agdhenBkZW1vchILEgpXaGl0ZUJvYXJkGNrAUAw</a><br><br>
+Or start a new whiteboard: <a href="http://demo.drawitlive.com/whiteboard">http://demo.drawitlive.com/whiteboard</a><br>
+<a href="http://twitter.com/monteslu">@monteslu</a>
+</div>
+
+
+
+</div>
+
+
+
+    </div>
+    
+    <footer>
+
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+
+
+  <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
+       change the UA-XXXXX-X to be your site's ID -->
+  <script>
+  /*
+   var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+
+   */
+  </script>
+  
+
+<div class="dijitDialog" role="dialog" aria-labelledby="imgDialog_title" title="" id="imgDialog" widgetid="imgDialog" style="display: none; position: absolute; ">
+	<div dojoattachpoint="titleBar" class="dijitDialogTitleBar" title="Right-click on image to save it">
+	<span dojoattachpoint="titleNode" class="dijitDialogTitle" id="imgDialog_title">Right-click on image to save it</span>
+	<span dojoattachpoint="closeButtonNode" class="dijitDialogCloseIcon" dojoattachevent="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
+		<span dojoattachpoint="closeText" class="closeText" title="Cancel">x</span>
+	</span>
+	</div>
+		<div dojoattachpoint="containerNode" class="dijitDialogPaneContent">
+    <img id="exportedImg" name="exportedImg">
+</div>
+</div><div class="dijitDialog" role="dialog" aria-labelledby="textDialog_title" title="" id="textDialog" style="display: none; position: absolute; " widgetid="textDialog">
+	<div dojoattachpoint="titleBar" class="dijitDialogTitleBar" title="Type in some text.">
+	<span dojoattachpoint="titleNode" class="dijitDialogTitle" id="textDialog_title">Type in some text.</span>
+	<span dojoattachpoint="closeButtonNode" class="dijitDialogCloseIcon" dojoattachevent="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
+		<span dojoattachpoint="closeText" class="closeText" title="Cancel">x</span>
+	</span>
+	</div>
+		<div dojoattachpoint="containerNode" class="dijitDialogPaneContent">
+    <div class="dijit dijitReset dijitInlineTable dijitLeft dijitTextBox dijitValidationTextBox" id="widget_wbText" role="presentation" widgetid="wbText"><div class="dijitReset dijitValidationContainer"><input class="dijitReset dijitInputField dijitValidationIcon dijitValidationInner" value="Χ " type="text" tabindex="-1" readonly="readonly" role="presentation"></div><div class="dijitReset dijitInputField dijitInputContainer"><input class="dijitReset dijitInputInner" dojoattachpoint="textbox,focusNode" autocomplete="off" name="wbText" type="text" id="wbText" tabindex="0" value=""></div></div><br>
+	<span class="dijit dijitReset dijitInline dijitButton" widgetid="okTextBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="okTextBtn_label" style="-webkit-user-select: none; " id="okTextBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="okTextBtn_label" dojoattachpoint="containerNode">OK</span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>&nbsp;&nbsp;&nbsp;<span class="dijit dijitReset dijitInline dijitButton" widgetid="cancelTextBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="cancelTextBtn_label" style="-webkit-user-select: none; " id="cancelTextBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="cancelTextBtn_label" dojoattachpoint="containerNode">Cancel</span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>
+</div>
+</div><div class="dijitDialog" role="dialog" aria-labelledby="movieDialog_title" title="" id="movieDialog" style="display: none; position: absolute; " widgetid="movieDialog">
+	<div dojoattachpoint="titleBar" class="dijitDialogTitleBar" title="Move slider to see drawing steps.">
+	<span dojoattachpoint="titleNode" class="dijitDialogTitle" id="movieDialog_title">Move slider to see drawing steps.</span>
+	<span dojoattachpoint="closeButtonNode" class="dijitDialogCloseIcon" dojoattachevent="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
+		<span dojoattachpoint="closeText" class="closeText" title="Cancel">x</span>
+	</span>
+	</div>
+		<div dojoattachpoint="containerNode" class="dijitDialogPaneContent">
+    <div id="movieWhiteboardContainer" style="border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-color: blue; border-right-color: blue; border-bottom-color: blue; border-left-color: blue; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; background-color: white; width: 600px; height: 450px; "><canvas width="600" height="450"></canvas></div><br>
+    <table class="dijit dijitReset dijitSlider dijitSliderH" cellspacing="0" cellpadding="0" border="0" rules="none" dojoattachevent="onkeypress:_onKeyPress,onkeyup:_onKeyUp" id="movieSlider" style="width: 500px; " widgetid="movieSlider"><tbody><tr class="dijitReset"><td class="dijitReset" colspan="2"></td><td dojoattachpoint="topDecoration" class="dijitReset dijitSliderDecoration dijitSliderDecorationT dijitSliderDecorationH"></td><td class="dijitReset" colspan="2"></td></tr><tr class="dijitReset"><td class="dijitReset dijitSliderButtonContainer dijitSliderButtonContainerH"><div class="dijitSliderDecrementIconH" style="display:none" dojoattachpoint="decrementButton"><span class="dijitSliderButtonInner">-</span></div></td><td class="dijitReset"><div class="dijitSliderBar dijitSliderBumper dijitSliderBumperH dijitSliderLeftBumper" dojoattachevent="onmousedown:_onClkDecBumper"></div></td><td class="dijitReset"><input dojoattachpoint="valueNode" type="hidden" value="0"><div class="dijitReset dijitSliderBarContainerH" role="presentation" dojoattachpoint="sliderBarContainer"><div role="presentation" dojoattachpoint="progressBar" class="dijitSliderBar dijitSliderBarH dijitSliderProgressBar dijitSliderProgressBarH" dojoattachevent="onmousedown:_onBarClick" style="width: 0%; "><div class="dijitSliderMoveable dijitSliderMoveableH"><div dojoattachpoint="sliderHandle,focusNode" class="dijitSliderImageHandle dijitSliderImageHandleH" dojoattachevent="onmousedown:_onHandleClick" role="slider" valuemin="0" valuemax="1" aria-valuemin="0" aria-valuemax="1" aria-valuenow="0" tabindex="0"></div></div></div><div role="presentation" dojoattachpoint="remainingBar" class="dijitSliderBar dijitSliderBarH dijitSliderRemainingBar dijitSliderRemainingBarH" dojoattachevent="onmousedown:_onBarClick" style="width: 100%; "></div></div></td><td class="dijitReset"><div class="dijitSliderBar dijitSliderBumper dijitSliderBumperH dijitSliderRightBumper" dojoattachevent="onmousedown:_onClkIncBumper"></div></td><td class="dijitReset dijitSliderButtonContainer dijitSliderButtonContainerH"><div class="dijitSliderIncrementIconH" style="display:none" dojoattachpoint="incrementButton"><span class="dijitSliderButtonInner">+</span></div></td></tr><tr class="dijitReset"><td class="dijitReset" colspan="2"></td><td dojoattachpoint="containerNode,bottomDecoration" class="dijitReset dijitSliderDecoration dijitSliderDecorationB dijitSliderDecorationH"></td><td class="dijitReset" colspan="2"></td></tr></tbody></table><br> <span class="dijit dijitReset dijitInline dijitButton" widgetid="exportMovieImgBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="exportMovieImgBtn_label" style="-webkit-user-select: none; " id="exportMovieImgBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="exportMovieImgBtn_label" dojoattachpoint="containerNode"><img src="/images/export-icon.png"></span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>
+	    	<div dojotype="dijit.Tooltip" connectid="exportMovieImgBtn" class="dijitTooltipData" id="dijit_Tooltip_0" widgetid="dijit_Tooltip_0">Export this snapshot of the drawing surface.</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    	user: <span id="movieUser">user</span><br>
+</div>
+</div><div class="dijitPopup" style="display: none; " role="presentation"><div role="presentation" tabindex="-1" class="dijitTooltipDialog" title="" id="lineColorPaletteDialog" widgetid="lineColorPaletteDialog" style="top: 0px; ">
+	<div class="dijitTooltipContainer" role="presentation">
+		<div class="dijitTooltipContents dijitTooltipFocusNode" dojoattachpoint="containerNode" role="dialog" title="Color Palette">
+					<table class="dojoxColorPicker " dojoattachevent="onkeypress: _handleKey" cellpadding="0" cellspacing="0" widgetid="lineColorPaletteWidget">
+	<tbody><tr>
+		<td valign="top" class="dojoxColorPickerRightPad">
+			<div class="dojoxColorPickerBox">
+				<!-- Forcing ABS in style attr due to dojo DND issue with not picking it up form the class. -->
+				<img role="status" title="Saturation Selector" alt="Saturation Selector" class="dojoxColorPickerPoint" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/widget/ColorPicker/images/pickerPointer.png" tabindex="0" dojoattachpoint="cursorNode" style="position: absolute; top: -5px; left: -5px; ">
+				<img role="presentation" alt="" dojoattachpoint="colorUnderlay" dojoattachevent="onclick: _setPoint, onmousedown: _stopDrag" class="dojoxColorPickerUnderlay" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/widget/ColorPicker/images/underlay.png" ondragstart="return false" style="background-color: rgb(255, 0, 0); ">
+			</div>
+		</td>
+		<td valign="top" class="dojoxColorPickerRightPad">
+			<div class="dojoxHuePicker">
+				<!-- Forcing ABS in style attr due to dojo DND issue with not picking it up form the class. -->
+				<img role="status" dojoattachpoint="hueCursorNode" tabindex="0" class="dojoxHuePickerPoint" title="Hue Selector" alt="Hue Selector" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/widget/ColorPicker/images/hueHandle.png" style="position: absolute; top: 146px; left: 0px; ">
+				<div class="dojoxHuePickerUnderlay" dojoattachpoint="hueNode">
+				    <img role="presentation" alt="" dojoattachevent="onclick: _setHuePoint, onmousedown: _stopDrag" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/widget/ColorPicker/images/hue.png">
+				</div>
+			</div>
+		</td>
+		<td valign="top">
+			<table cellpadding="0" cellspacing="0">
+				<tbody><tr>
+					<td valign="top" class="dojoxColorPickerPreviewContainer">
+						<table cellpadding="0" cellspacing="0">
+							<tbody><tr>
+								<td valign="top" class="dojoxColorPickerRightPad">
+									<div dojoattachpoint="previewNode" class="dojoxColorPickerPreview" style="background-color: rgb(255, 255, 255); "></div>
+								</td>
+								<td valign="top">
+									<div dojoattachpoint="safePreviewNode" class="dojoxColorPickerWebSafePreview" style="background-color: rgb(255, 255, 255); "></div>
+								</td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+				<tr>
+					<td valign="bottom">
+						<table class="dojoxColorPickerOptional" cellpadding="0" cellspacing="0">
+							<tbody><tr>
+								<td>
+									<div class="dijitInline dojoxColorPickerRgb" dojoattachpoint="rgbNode">
+										<table cellpadding="1" cellspacing="1">
+										<tbody><tr><td><label for="lineColorPaletteWidget_0_r">r</label></td><td><input id="lineColorPaletteWidget_0_r" dojoattachpoint="Rval" size="1" dojoattachevent="onchange: _colorInputChange"></td></tr>
+										<tr><td><label for="lineColorPaletteWidget_0_g">g</label></td><td><input id="lineColorPaletteWidget_0_g" dojoattachpoint="Gval" size="1" dojoattachevent="onchange: _colorInputChange"></td></tr>
+										<tr><td><label for="lineColorPaletteWidget_0_b">b</label></td><td><input id="lineColorPaletteWidget_0_b" dojoattachpoint="Bval" size="1" dojoattachevent="onchange: _colorInputChange"></td></tr>
+										</tbody></table>
+									</div>
+								</td>
+								<td>
+									<div class="dijitInline dojoxColorPickerHsv" dojoattachpoint="hsvNode">
+										<table cellpadding="1" cellspacing="1">
+										<tbody><tr><td><label for="lineColorPaletteWidget_0_h">h</label></td><td><input id="lineColorPaletteWidget_0_h" dojoattachpoint="Hval" size="1" dojoattachevent="onchange: _colorInputChange"> °</td></tr>
+										<tr><td><label for="lineColorPaletteWidget_0_s">s</label></td><td><input id="lineColorPaletteWidget_0_s" dojoattachpoint="Sval" size="1" dojoattachevent="onchange: _colorInputChange"> %</td></tr>
+										<tr><td><label for="lineColorPaletteWidget_0_v">v</label></td><td><input id="lineColorPaletteWidget_0_v" dojoattachpoint="Vval" size="1" dojoattachevent="onchange: _colorInputChange"> %</td></tr>
+										</tbody></table>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="dojoxColorPickerHex" dojoattachpoint="hexNode" aria-live="polite">	
+										<label for="lineColorPaletteWidget_0_hex">&nbsp;hex&nbsp;</label><input id="lineColorPaletteWidget" dojoattachpoint="hexCode, focusNode, valueNode" size="6" class="dojoxColorPickerHexCode" dojoattachevent="onchange: _colorInputChange" tabindex="0">
+									</div>
+								</td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+					<span class="dijit dijitReset dijitInline dijitButton" widgetid="lineColorPaletteOkBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="lineColorPaletteOkBtn_label" style="-webkit-user-select: none; " id="lineColorPaletteOkBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="lineColorPaletteOkBtn_label" dojoattachpoint="containerNode">OK</span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span> <span class="dijit dijitReset dijitInline dijitButton" widgetid="lineColorPaletteCancelBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="lineColorPaletteCancelBtn_label" style="-webkit-user-select: none; " id="lineColorPaletteCancelBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="lineColorPaletteCancelBtn_label" dojoattachpoint="containerNode">Cancel</span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>
+			   </div>
+	</div>
+	<div class="dijitTooltipConnector" role="presentation"></div>
+</div></div><div class="dijitPopup" style="display: none; " role="presentation"><div role="presentation" tabindex="-1" class="dijitTooltipDialog" title="" id="fillColorPaletteDialog" widgetid="fillColorPaletteDialog" style="top: 0px; ">
+	<div class="dijitTooltipContainer" role="presentation">
+		<div class="dijitTooltipContents dijitTooltipFocusNode" dojoattachpoint="containerNode" role="dialog" title="Color Palette">
+					<table class="dojoxColorPicker " dojoattachevent="onkeypress: _handleKey" cellpadding="0" cellspacing="0" widgetid="fillColorPaletteWidget">
+	<tbody><tr>
+		<td valign="top" class="dojoxColorPickerRightPad">
+			<div class="dojoxColorPickerBox">
+				<!-- Forcing ABS in style attr due to dojo DND issue with not picking it up form the class. -->
+				<img role="status" title="Saturation Selector" alt="Saturation Selector" class="dojoxColorPickerPoint" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/widget/ColorPicker/images/pickerPointer.png" tabindex="0" dojoattachpoint="cursorNode" style="position: absolute; top: -5px; left: -5px; ">
+				<img role="presentation" alt="" dojoattachpoint="colorUnderlay" dojoattachevent="onclick: _setPoint, onmousedown: _stopDrag" class="dojoxColorPickerUnderlay" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/widget/ColorPicker/images/underlay.png" ondragstart="return false" style="background-color: rgb(255, 0, 0); ">
+			</div>
+		</td>
+		<td valign="top" class="dojoxColorPickerRightPad">
+			<div class="dojoxHuePicker">
+				<!-- Forcing ABS in style attr due to dojo DND issue with not picking it up form the class. -->
+				<img role="status" dojoattachpoint="hueCursorNode" tabindex="0" class="dojoxHuePickerPoint" title="Hue Selector" alt="Hue Selector" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/widget/ColorPicker/images/hueHandle.png" style="position: absolute; top: 146px; left: 0px; ">
+				<div class="dojoxHuePickerUnderlay" dojoattachpoint="hueNode">
+				    <img role="presentation" alt="" dojoattachevent="onclick: _setHuePoint, onmousedown: _stopDrag" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojox/widget/ColorPicker/images/hue.png">
+				</div>
+			</div>
+		</td>
+		<td valign="top">
+			<table cellpadding="0" cellspacing="0">
+				<tbody><tr>
+					<td valign="top" class="dojoxColorPickerPreviewContainer">
+						<table cellpadding="0" cellspacing="0">
+							<tbody><tr>
+								<td valign="top" class="dojoxColorPickerRightPad">
+									<div dojoattachpoint="previewNode" class="dojoxColorPickerPreview" style="background-color: rgb(255, 255, 255); "></div>
+								</td>
+								<td valign="top">
+									<div dojoattachpoint="safePreviewNode" class="dojoxColorPickerWebSafePreview" style="background-color: rgb(255, 255, 255); "></div>
+								</td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+				<tr>
+					<td valign="bottom">
+						<table class="dojoxColorPickerOptional" cellpadding="0" cellspacing="0">
+							<tbody><tr>
+								<td>
+									<div class="dijitInline dojoxColorPickerRgb" dojoattachpoint="rgbNode">
+										<table cellpadding="1" cellspacing="1">
+										<tbody><tr><td><label for="fillColorPaletteWidget_0_r">r</label></td><td><input id="fillColorPaletteWidget_0_r" dojoattachpoint="Rval" size="1" dojoattachevent="onchange: _colorInputChange"></td></tr>
+										<tr><td><label for="fillColorPaletteWidget_0_g">g</label></td><td><input id="fillColorPaletteWidget_0_g" dojoattachpoint="Gval" size="1" dojoattachevent="onchange: _colorInputChange"></td></tr>
+										<tr><td><label for="fillColorPaletteWidget_0_b">b</label></td><td><input id="fillColorPaletteWidget_0_b" dojoattachpoint="Bval" size="1" dojoattachevent="onchange: _colorInputChange"></td></tr>
+										</tbody></table>
+									</div>
+								</td>
+								<td>
+									<div class="dijitInline dojoxColorPickerHsv" dojoattachpoint="hsvNode">
+										<table cellpadding="1" cellspacing="1">
+										<tbody><tr><td><label for="fillColorPaletteWidget_0_h">h</label></td><td><input id="fillColorPaletteWidget_0_h" dojoattachpoint="Hval" size="1" dojoattachevent="onchange: _colorInputChange"> °</td></tr>
+										<tr><td><label for="fillColorPaletteWidget_0_s">s</label></td><td><input id="fillColorPaletteWidget_0_s" dojoattachpoint="Sval" size="1" dojoattachevent="onchange: _colorInputChange"> %</td></tr>
+										<tr><td><label for="fillColorPaletteWidget_0_v">v</label></td><td><input id="fillColorPaletteWidget_0_v" dojoattachpoint="Vval" size="1" dojoattachevent="onchange: _colorInputChange"> %</td></tr>
+										</tbody></table>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="dojoxColorPickerHex" dojoattachpoint="hexNode" aria-live="polite">	
+										<label for="fillColorPaletteWidget_0_hex">&nbsp;hex&nbsp;</label><input id="fillColorPaletteWidget" dojoattachpoint="hexCode, focusNode, valueNode" size="6" class="dojoxColorPickerHexCode" dojoattachevent="onchange: _colorInputChange" tabindex="0">
+									</div>
+								</td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+					<span class="dijit dijitReset dijitInline dijitButton" widgetid="fillColorPaletteOkBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="fillColorPaletteOkBtn_label" style="-webkit-user-select: none; " id="fillColorPaletteOkBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="fillColorPaletteOkBtn_label" dojoattachpoint="containerNode">OK</span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span> <span class="dijit dijitReset dijitInline dijitButton" widgetid="fillColorPaletteCancelBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="fillColorPaletteCancelBtn_label" style="-webkit-user-select: none; " id="fillColorPaletteCancelBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="fillColorPaletteCancelBtn_label" dojoattachpoint="containerNode">Cancel</span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>					
+			   </div>
+	</div>
+	<div class="dijitTooltipConnector" role="presentation"></div>
+</div></div><div class="dijitPopup dijitTooltipDialogPopup" style="z-index: 1000; top: 546px; left: 849px; visibility: visible; display: none; " role="presentation" id="popup_2" dijitpopupparent="clearDrawingDisplay"><div role="presentation" tabindex="-1" class="dijitTooltipDialog dijitTooltipABLeft dijitTooltipBelow" title="" id="clearDrawingDialog" widgetid="clearDrawingDialog" style="top: 0px; overflow-x: hidden; overflow-y: hidden; visibility: visible; width: 121px; ">
+	<div class="dijitTooltipContainer" role="presentation">
+		<div class="dijitTooltipContents dijitTooltipFocusNode" dojoattachpoint="containerNode" role="dialog" title="Clear Drawing">
+			   		Clear Drawing?<br>
+					<span class="dijit dijitReset dijitInline dijitButton" widgetid="clearDrawingYesBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="clearDrawingYesBtn_label" style="-webkit-user-select: none; " id="clearDrawingYesBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="clearDrawingYesBtn_label" dojoattachpoint="containerNode">Yes</span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span> &nbsp;&nbsp;&nbsp; <span class="dijit dijitReset dijitInline dijitButton" widgetid="clearDrawingNoBtn"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="clearDrawingNoBtn_label" style="-webkit-user-select: none; " id="clearDrawingNoBtn" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="clearDrawingNoBtn_label" dojoattachpoint="containerNode">No</span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode"></span>					
+			   </div>
+	</div>
+	<div class="dijitTooltipConnector" role="presentation"></div>
+</div></div><div class="dijitTooltip dijitTooltipAbove dijitTooltipABLeft" id="dijit__MasterTooltip_0" widgetid="dijit__MasterTooltip_0" style=""><div class="dijitTooltipContainer dijitTooltipContents" dojoattachpoint="containerNode" role="alert"></div><div class="dijitTooltipConnector" dojoattachpoint="connectorNode"></div></div><iframe name="wcs-iframe" id="wcs-iframe" style="height: 100%; width: 100%; " src="http://408.talkgadget.google.com/talkgadget/d?token=AHRlWrqAZdKzxcn_42PWUHOQxK2wJ6k4Ux0MhE5Zzb4JvH0-yOuWW-rvsffObdIqe9TJyrMnutvz57MYqDYgGPF6WTILfJLolpGa6OGrOy5ZpcGA-IVZY5KKlY_o6MoGSMkBDWvZlBeB&amp;xpc=%7B%22cn%22%3A%22NyO5FSzq7b%22%2C%22tp%22%3Anull%2C%22ppu%22%3A%22http%3A%2F%2Fdemo.drawitlive.com%2F_ah%2Fchannel%2Fxpc_blank%22%2C%22lpu%22%3A%22http%3A%2F%2F408.talkgadget.google.com%2Ftalkgadget%2Fxpc_blank%22%7D"></iframe><div class="dijitPopup dijitMenuPopup" style="z-index: 1000; top: 202px; left: 640px; visibility: visible; display: none; " role="presentation" id="lineStrokeSelect_dropdown" dijitpopupparent="lineStrokeSelect"><div style="top: 0px; overflow-x: hidden; overflow-y: hidden; width: 125px; visibility: visible; " class="dijit dijitMenu dijitReset dijitSelectMenu dijitMenuPassive" role="presentation" id="lineStrokeSelect_menu" widgetid="lineStrokeSelect_menu" tabindex="0"><table class="dijitReset dijitMenuTable" role="listbox" tabindex="0" dojoattachevent="onkeypress:_onKeyPress" cellspacing="0" style="">
+	<tbody class="dijitReset" dojoattachpoint="containerNode"><tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" role="listitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="dijit_MenuItem_0_text dijit_MenuItem_0_accel" style="-webkit-user-select: none; " id="dijit_MenuItem_0" aria-disabled="false" widgetid="dijit_MenuItem_0" aria-selected="false">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitIcon dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_0_text">
+    	    	Line Thicknes:  1
+	    		</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" dojoattachpoint="accelKeyNode" id="dijit_MenuItem_0_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden">
+			<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr><tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" role="listitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="dijit_MenuItem_1_text dijit_MenuItem_1_accel" style="-webkit-user-select: none; " id="dijit_MenuItem_1" aria-disabled="false" widgetid="dijit_MenuItem_1" aria-selected="false">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitIcon dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_1_text">
+    	    	Line Thicknes:  2
+	    		</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" dojoattachpoint="accelKeyNode" id="dijit_MenuItem_1_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden">
+			<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr><tr class="dijitReset dijitMenuItem dijitSelectSelectedOption" dojoattachpoint="focusNode" role="listitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="dijit_MenuItem_2_text dijit_MenuItem_2_accel" style="-webkit-user-select: none; " id="dijit_MenuItem_2" aria-disabled="false" widgetid="dijit_MenuItem_2" aria-selected="true">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitIcon dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_2_text">
+    	    	Line Thicknes:  3
+	    		</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" dojoattachpoint="accelKeyNode" id="dijit_MenuItem_2_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden">
+			<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr><tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" role="listitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="dijit_MenuItem_3_text dijit_MenuItem_3_accel" style="-webkit-user-select: none; " id="dijit_MenuItem_3" aria-disabled="false" widgetid="dijit_MenuItem_3" aria-selected="false">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitIcon dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_3_text">
+    	    	Line Thicknes:  4
+	    		</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" dojoattachpoint="accelKeyNode" id="dijit_MenuItem_3_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden">
+			<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr><tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" role="listitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="dijit_MenuItem_4_text dijit_MenuItem_4_accel" style="-webkit-user-select: none; " id="dijit_MenuItem_4" aria-disabled="false" widgetid="dijit_MenuItem_4" aria-selected="false">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitIcon dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_4_text">
+    	    	Line Thicknes:  5
+	    		</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" dojoattachpoint="accelKeyNode" id="dijit_MenuItem_4_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden">
+			<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr><tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" role="listitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="dijit_MenuItem_5_text dijit_MenuItem_5_accel" style="-webkit-user-select: none; " id="dijit_MenuItem_5" aria-disabled="false" widgetid="dijit_MenuItem_5" aria-selected="false">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitIcon dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_5_text">
+    	    	Line Thicknes:  6
+	    		</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" dojoattachpoint="accelKeyNode" id="dijit_MenuItem_5_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden">
+			<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr><tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" role="listitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="dijit_MenuItem_6_text dijit_MenuItem_6_accel" style="-webkit-user-select: none; " id="dijit_MenuItem_6" aria-disabled="false" widgetid="dijit_MenuItem_6" aria-selected="false">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitIcon dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_6_text">
+    	    	Line Thicknes:  7
+	    		</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" dojoattachpoint="accelKeyNode" id="dijit_MenuItem_6_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden">
+			<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr><tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" role="listitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="dijit_MenuItem_7_text dijit_MenuItem_7_accel" style="-webkit-user-select: none; " id="dijit_MenuItem_7" aria-disabled="false" widgetid="dijit_MenuItem_7" aria-selected="false">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitIcon dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_7_text">
+    	    	Line Thicknes:  8
+	    		</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" dojoattachpoint="accelKeyNode" id="dijit_MenuItem_7_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden">
+			<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr><tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" role="listitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="dijit_MenuItem_8_text dijit_MenuItem_8_accel" style="-webkit-user-select: none; " id="dijit_MenuItem_8" aria-disabled="false" widgetid="dijit_MenuItem_8" aria-selected="false">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitIcon dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_8_text">
+    	    	Line Thicknes:  9
+	    		</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" dojoattachpoint="accelKeyNode" id="dijit_MenuItem_8_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden">
+			<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr><tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" role="listitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="dijit_MenuItem_9_text dijit_MenuItem_9_accel" style="-webkit-user-select: none; " id="dijit_MenuItem_9" aria-disabled="false" widgetid="dijit_MenuItem_9" aria-selected="false">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitIcon dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_9_text">
+    	    	Line Thicknes: 10
+	    		</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" dojoattachpoint="accelKeyNode" id="dijit_MenuItem_9_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden">
+			<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr><tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" role="listitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="dijit_MenuItem_10_text dijit_MenuItem_10_accel" style="-webkit-user-select: none; " id="dijit_MenuItem_10" aria-disabled="false" widgetid="dijit_MenuItem_10" aria-selected="false">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitIcon dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_10_text">
+    	    	Line Thicknes: 15
+	    		</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" dojoattachpoint="accelKeyNode" id="dijit_MenuItem_10_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden">
+			<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr><tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" role="listitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="dijit_MenuItem_11_text dijit_MenuItem_11_accel" style="-webkit-user-select: none; " id="dijit_MenuItem_11" aria-disabled="false" widgetid="dijit_MenuItem_11" aria-selected="false">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitIcon dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_11_text">
+    	    	Line Thicknes: 20
+	    		</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" dojoattachpoint="accelKeyNode" id="dijit_MenuItem_11_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden">
+			<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr><tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" role="listitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="dijit_MenuItem_12_text dijit_MenuItem_12_accel" style="-webkit-user-select: none; " id="dijit_MenuItem_12" aria-disabled="false" widgetid="dijit_MenuItem_12" aria-selected="false">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitIcon dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_12_text">
+    	    	Line Thicknes: 30
+	    		</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" dojoattachpoint="accelKeyNode" id="dijit_MenuItem_12_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden">
+			<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr><tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" role="listitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="dijit_MenuItem_13_text dijit_MenuItem_13_accel" style="-webkit-user-select: none; " id="dijit_MenuItem_13" aria-disabled="false" widgetid="dijit_MenuItem_13" aria-selected="false">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitIcon dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_13_text">
+    	    	Line Thicknes: 50
+	    		</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" dojoattachpoint="accelKeyNode" id="dijit_MenuItem_13_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden">
+			<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr><tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" role="listitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="dijit_MenuItem_14_text dijit_MenuItem_14_accel" style="-webkit-user-select: none; " id="dijit_MenuItem_14" aria-disabled="false" widgetid="dijit_MenuItem_14" aria-selected="false">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitIcon dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_14_text">
+    	    	Line Thicknes: 75
+	    		</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" dojoattachpoint="accelKeyNode" id="dijit_MenuItem_14_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden">
+			<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr><tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" role="listitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="dijit_MenuItem_15_text dijit_MenuItem_15_accel" style="-webkit-user-select: none; " id="dijit_MenuItem_15" aria-disabled="false" widgetid="dijit_MenuItem_15" aria-selected="false">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitIcon dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_15_text">
+    	    	Line Thicknes:100
+	    		</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" dojoattachpoint="accelKeyNode" id="dijit_MenuItem_15_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden">
+			<img src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr></tbody>
+</table></div></div></body></html>

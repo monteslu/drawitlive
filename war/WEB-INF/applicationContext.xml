@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd 
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+       
+
+    
+    
+    <bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass">
+			<value>org.springframework.web.servlet.view.JstlView</value>
+		</property>
+		<property name="prefix">
+			<value>/WEB-INF/jsp/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+	
+
+	<bean id="commonInterceptor" class="com.azprogrammer.qgf.interceptors.CommonInterceptor">
+		<property name="providers">
+		<list>
+			<bean class="com.azprogrammer.qgf.auth.Provider">
+				<property name="providerName" value="Google"/>
+				<property name="shortName" value="google"/>
+				<property name="openIdURL" value="google.com/accounts/o8/id"/>
+			</bean>
+			<bean class="com.azprogrammer.qgf.auth.Provider">
+				<property name="providerName" value="Yahoo"/>
+				<property name="shortName" value="yahoo"/>
+				<property name="openIdURL" value="yahoo.com"/>
+			</bean>
+			<bean class="com.azprogrammer.qgf.auth.Provider">
+				<property name="providerName" value="AOL"/>
+				<property name="shortName" value="aol"/>
+				<property name="openIdURL" value="aol.com"/>
+			</bean>
+			<bean class="com.azprogrammer.qgf.auth.Provider">
+				<property name="providerName" value="MyOpenId.com"/>
+				<property name="shortName" value="myopenid"/>
+				<property name="openIdURL" value="myopenid.com"/>
+			</bean>
+
+		</list>
+		</property>
+	</bean>
+	
+	<bean id="textFormatter" class="com.azprogrammer.qgf.text.TextFormatter">
+	</bean>
+	
+	<bean id="inputValidator" class="com.azprogrammer.qgf.text.InputValidator">
+		<property name="maxStringLength" value="50"/>
+		<property name="maxCommentTextLength" value="500"/>
+	</bean>
+	
+		
+</beans>
